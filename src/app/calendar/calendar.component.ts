@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IgxCalendarComponent } from 'igniteui-angular';
 
 @Component({
   selector: 'app-calendar',
@@ -7,8 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalendarComponent implements OnInit {
 
+  public range: Date[] = [];
+
+  @ViewChild('calendar', { static: false }) public calendar: IgxCalendarComponent;
+
   constructor() { }
 
-  ngOnInit() {}
+  public ngOnInit() { }
 
+  public verifyRange(dates: Date[]) {
+    console.log(dates);
+  }
+
+  public selectPTOdays(dates: Date[]) {
+    this.range = dates;
+  }
 }
