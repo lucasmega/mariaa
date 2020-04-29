@@ -17,6 +17,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 		AppComponent,
 		HeaderComponent,
 		FooterComponent,
+		SidenavComponent,
 		CalendarComponent
 	],
 	entryComponents: [],

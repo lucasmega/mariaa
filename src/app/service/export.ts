@@ -1,0 +1,1 @@
+export { SidenavService } from '../service/sidenav.service';

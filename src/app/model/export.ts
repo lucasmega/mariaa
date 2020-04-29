@@ -1,0 +1,1 @@
+export { SideNavModel } from './sidenav.model';
