@@ -10,18 +10,13 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
-  constructor(
-    private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar
-  ) {
-    this.initializeApp();
-  }
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
+  public activeHeaderOver: boolean;
+
+  constructor( ) { }
+
+  public onScroll(event: any): void {
+    const scrollTop = event.target.scrollTop;
+    this.activeHeaderOver = (scrollTop > 0);
   }
 }
