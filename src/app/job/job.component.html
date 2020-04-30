@@ -1,0 +1,18 @@
+<div *ngIf="isWork" class="container" id="no-work">
+    <mat-divider></mat-divider>
+    <span>
+            <img src="../../assets/icon/calendar.svg">
+        </span>
+    <mat-label>Nenhum trabalho</mat-label>
+</div>
+
+<div *ngIf="!isWork" class="container" id="work">
+    <mat-divider></mat-divider>
+
+    <mat-list role="list">
+        <mat-list-item role="listitem">
+            <mat-label>Endereço: Rua Madre Ana Justina, 03 - SP</mat-label>
+        </mat-list-item>
+    </mat-list>
+
+</div>
