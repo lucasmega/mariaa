@@ -3,6 +3,11 @@ import { CommonModule } from '@angular/common';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+
 import { PageRoutingModule } from './pages-routing.module';
 
 import { ProfileComponent } from './profile/profile.component';
@@ -12,7 +17,10 @@ import { ProfileComponent } from './profile/profile.component';
     FormsModule,
     IonicModule,
     CommonModule,
+    MatInputModule,
+    MatButtonModule,
     PageRoutingModule,
+    MatFormFieldModule,
     ReactiveFormsModule
   ],
   declarations: [ 

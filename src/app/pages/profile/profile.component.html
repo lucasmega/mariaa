@@ -1,3 +1,40 @@
-<p>
-  profile works!
-</p>
+<div class="container">
+    <div class="row" id="image">
+        <div class="col">
+            <span><img src="../../../assets/icon/user.svg"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <!-- <label [innerHTML]="profile.name + ' ' + profile.lastName"></label> -->
+        </div>
+    </div>
+
+    <div>
+        <form>
+            <mat-form-field class="full-width">
+                <mat-label>Nome:</mat-label>
+                <input type="text" #profile.name [disabled]="isDisabled" matInput> {{ profile.name }}
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Sobrenome:</mat-label>
+                <input type="text" #profile.lastName [disabled]="isDisabled" matInput> {{ profile.lastName }}
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>E-mail:</mat-label>
+                <input type="text" #profile.email [disabled]="isDisabled" matInput> {{ profile.email }}
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Senha:</mat-label>
+                <input type="password" #profile.password [disabled]="isDisabled" matInput> {{ profile.password ? '**********' : '**********' }}
+            </mat-form-field>
+
+            <section>
+                <button type="button" id="btn-profile" (click)="editProfile()" [innerHTML]="isDisabled ? 'Editar' : 'Salvar'"></button>
+            </section>
+        </form>
+    </div>
+</div>

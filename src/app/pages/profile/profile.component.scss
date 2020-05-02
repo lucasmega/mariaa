@@ -1,0 +1,29 @@
+.container {
+    .row#image {
+        margin-top: 20px;
+        text-align: center;
+        .col {
+            span {
+                img {
+                    width: 130px;
+                }
+            }
+        }
+    }
+    form {
+        .example-form {
+            width: 100%;
+        }
+        .full-width {
+            width: 100%;
+        }
+        #btn-profile {
+            width: 100%;
+            color: #fff;
+            min-height: 8vh;
+            margin-bottom: 80px;
+            text-transform: uppercase;
+            background-color: #ee6e73;
+        }
+    }
+}
