@@ -3,6 +3,28 @@
     display: table-cell;
 }
 
+.container {
+    .block {
+        display: grid;
+        margin-bottom: 10px;
+        label {
+            margin: 0;
+            font-family: 'comfortaa';
+        }
+        label.month {
+            font-size: 35px;
+            font-weight: 900;
+            color: #ee6e73;
+            font-family: "comfortaa";
+            text-transform: uppercase;
+        }
+        label.year {
+            font-size: 15px;
+            color: #2e2e2e;
+        }
+    }
+}
+
 $my-calendar-theme: igx-calendar-theme( $date-current-text-color: #ee6e73, $header-background: #fff);
 :host {
      ::ng-deep {

@@ -2,7 +2,6 @@
     display: grid;
     text-align: center;
     .mat-divider {
-        margin-top: 10px;
         margin-bottom: 25px;
     }
     img {
@@ -14,5 +13,25 @@
     .mat-divider {
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    .block {
+        display: grid;
+        margin-top: 15px;
+        label {
+            margin: 0;
+        }
+        label#title {
+            font-size: 8px;
+            color: #c2c2c2;
+            text-transform: uppercase;
+        }
+        label#address {
+            width: auto;
+            font-size: 15px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-family: 'comfortaa';
+        }
     }
 }

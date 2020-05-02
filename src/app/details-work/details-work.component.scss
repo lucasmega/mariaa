@@ -36,6 +36,9 @@
                 margin-left: 15px;
                 background-color: #ee6e73;
             }
+            button:focus {
+                outline: none;
+            }
         }
     }
     .address {

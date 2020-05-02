@@ -1,3 +1,12 @@
+<div class="container">
+    <div class="block">
+        <label class="month" [innerHTML]="getMonth(calendar.viewDate)"></label>
+        <label class="year" [innerHTML]="getYear(calendar.viewDate)"></label>
+    </div>
+    <mat-divider></mat-divider>
+</div>
+
+
 <igx-days-view #calendar [locale]="pt-BR" [selection]="'single'" (onDateSelection)="onDaySelected($event)"></igx-days-view>
 
 <app-job></app-job>
