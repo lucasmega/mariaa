@@ -1,13 +1,17 @@
 <div id="mySidenav" class="sidenav">
 
-    <div class="row">
+    <div class="row" (click)="onProfile()">
         <div class="col-4">
             <span id="user">
           <img src="../../assets/icon/user.svg">
         </span>
         </div>
         <div class="col-8">
-            <label>Maria da Silva</label>
+            <label id="name">Maria da Silva</label>
+            <div class="block-score">
+                <label id="score">4.78</label>
+                <span><img src="../../assets/icon/star.svg"></span>
+            </div>
         </div>
     </div>
 

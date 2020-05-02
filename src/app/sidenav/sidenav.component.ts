@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { SideNavModel } from '../model/export';
 import { SidenavService } from '../service/export';
@@ -12,7 +13,7 @@ export class SidenavComponent implements OnInit {
   public showFiller = false;
   public items: any[] = [];
 
-  constructor(private sidenavService: SidenavService) {
+  constructor(private sidenavService: SidenavService, private router: Router) {
     this.items = this.sidenavService.getItems();
   }
 
@@ -29,5 +30,10 @@ export class SidenavComponent implements OnInit {
   }
 
   public openPage(item: SideNavModel) { }
+
+  public onProfile() {
+    this.router.navigateByUrl('/profile');
+    this.closeNav();
+  }
 
 }

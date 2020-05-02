@@ -9,8 +9,6 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { IgxCalendarModule } from 'igniteui-angular';
 
-
-import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule } from '@angular/material/card';
@@ -19,6 +17,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
+
+import { PageModule } from './pages/page.module';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { JobComponent } from './job/job.component';
@@ -42,6 +43,7 @@ import { DetailsWorkComponent } from './details-work/details-work.component';
 		DetailsWorkComponent
 	],
 	imports: [
+		PageModule,
 		FormsModule,
 		MatCardModule,
 		BrowserModule,
