@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col-7">
+            <label id="day" [innerHTML]="data.day"></label>
+            <label id="week" [innerHTML]="data.week"></label>
+        </div>
+        <div class="col-3">
+            <label [innerHTML]="category"></label>
+        </div>
+    </div>
+    <div>
+        <mat-divider></mat-divider>
+
+        <mat-list role="list">
+            <mat-list-item role="listitem">
+                <div class="address">
+                    <div class="block">
+                        <label id="title">Logradouro: </label>
+                        <label id="content" [innerHTML]="addressModel.logradouro"></label>
+                    </div>
+                    <div class="block">
+                        <label id="title">Bairro: </label>
+                        <label id="content" [innerHTML]="addressModel.bairro"></label>
+                    </div>
+                    <div class="block">
+                        <label id="title">Número: </label>
+                        <label id="content" [innerHTML]="addressModel.numero"></label>
+                    </div>
+                    <div class="block">
+                        <label id="title">Localidade: </label>
+                        <label id="content" [innerHTML]="addressModel.localidade"></label>
+                    </div>
+                    <div class="block">
+                        <label id="title">CEP: </label>
+                        <label id="content" [innerHTML]="addressModel.cep"></label>
+                    </div>
+                    <div class="block">
+                        <label id="title">UF: </label>
+                        <label id="content" [innerHTML]="addressModel.uf"></label>
+                    </div>
+                </div>
+            </mat-list-item>
+        </mat-list>
+
+        <mat-divider></mat-divider>
+
+        <div class="row" id="btn">
+            <div class="col">
+                <button (click)="onNoClick()">Cancelar</button>
+                <button>MAPA</button>
+            </div>
+        </div>
+    </div>
+</div>

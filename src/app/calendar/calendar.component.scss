@@ -1,3 +1,11 @@
+@import '~igniteui-angular/lib/core/styles/themes/index';
 .example-button-row {
     display: table-cell;
+}
+
+$my-calendar-theme: igx-calendar-theme( $date-current-text-color: #ee6e73, $header-background: #fff);
+:host {
+     ::ng-deep {
+        @include igx-calendar($my-calendar-theme);
+    }
 }

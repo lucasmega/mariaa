@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -25,6 +26,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { DetailsWorkComponent } from './details-work/details-work.component';
 
 @NgModule({
 	declarations: [
@@ -33,15 +35,19 @@ import { CalendarComponent } from './calendar/calendar.component';
 		HeaderComponent,
 		FooterComponent,
 		SidenavComponent,
-		CalendarComponent
+		CalendarComponent,
+		DetailsWorkComponent
 	],
-	entryComponents: [],
+	entryComponents: [
+		DetailsWorkComponent
+	],
 	imports: [
 		FormsModule,
 		MatCardModule,
 		BrowserModule,
 		MatInputModule,
 		MatButtonModule,
+		MatDialogModule,
 		AppRoutingModule,
 		MatDividerModule,
 		IgxCalendarModule,

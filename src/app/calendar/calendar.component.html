@@ -1,6 +1,3 @@
-<article class="sample-column calendar-wrapper">
-    <igx-calendar [locale]="pt-BR" #calendar selection="multi" (onSelection)="selectPTOdays($event)">
-    </igx-calendar>
-</article>
+<igx-days-view #calendar [locale]="pt-BR" [selection]="'single'" (onDateSelection)="onDaySelected($event)"></igx-days-view>
 
 <app-job></app-job>

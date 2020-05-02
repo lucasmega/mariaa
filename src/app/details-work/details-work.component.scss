@@ -1,0 +1,56 @@
+.container {
+    .row {
+        .col-7 {
+            display: grid;
+            label {
+                font-family: 'comfortaa';
+            }
+            label#day {
+                color: #ee6e73;
+                font-size: 30px;
+                font-weight: 900;
+            }
+            label#week {
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+        .col-3 {
+            label {
+                right: 15px;
+                position: relative;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .row#btn {
+        text-align: end;
+        position: relative;
+        .col {
+            padding-top: 15px;
+            button {
+                width: auto;
+                border: none;
+                color: #fff;
+                min-width: 70px;
+                margin-left: 15px;
+                background-color: #ee6e73;
+            }
+        }
+    }
+    .address {
+        margin-top: 15px;
+        div.block {
+            display: grid;
+            label#title {
+                margin-bottom: 0;
+                font-size: 14px;
+                color: #c2c2c2;
+            }
+            label#content {
+                font-family: "comfortaa";
+                color: #000;
+            }
+        }
+    }
+}
