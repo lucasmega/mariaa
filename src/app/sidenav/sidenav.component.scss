@@ -7,16 +7,16 @@
 }
 
 #mySidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
     top: 0;
     right: 0;
-    background-color: #fff;
-    overflow-x: hidden;
-    padding-top: 60px;
+    width: 0;
+    z-index: 1;
+    height: 100%;
+    position: fixed;
     transition: 0.5s;
+    padding-top: 60px;
+    overflow-x: hidden;
+    background-color: #fff;
     #box-user {
         .fa-user-circle {
             left: 20px;
@@ -69,41 +69,52 @@
     border: solid 0.5px #8a8a8a;
 }
 
-span#items {
-    img {
-        width: 30px;
-        margin-right: 20px;
-    }
-}
-
-span#user {
-    img {
-        margin-left: 10px;
-        margin-top: -40px;
-        max-width: 80px;
-    }
-}
-
-.row {
-    .col-8 {
-        margin-top: -30px;
-        label {
-            margin: 0;
-            color: #000;
-            font-size: larger;
-        }
-        label#name {
-            font-family: 'comfortaa';
-        }
-        .block-score {
-            label#score {
-                color: #000;
-            }
+.sidenav {
+    .row {
+        .col-3 {
             span {
                 img {
-                    width: 10px;
-                    margin-left: 5px;
+                    max-width: 80px;
+                    margin-left: 10px;
+                    margin-top: -40px;
+                    margin-bottom: 20px;
                 }
+            }
+        }
+        .col-9 {
+            margin-top: -30px;
+            label {
+                margin: 0;
+                color: #000;
+                font-size: larger;
+            }
+            label#name {
+                font-family: 'comfortaa';
+            }
+            .block-score {
+                label#score {
+                    color: #000;
+                }
+                span {
+                    img {
+                        width: 10px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .mat-list-item {
+        span {
+            color: #000;
+            font-size: 20px;
+            margin-left: 15px;
+            font-family: comfortaa;
+            img {
+                width: 30px;
+                margin-top: 10px;
+                margin-right: 20px;
+                margin-bottom: 10px;
             }
         }
     }

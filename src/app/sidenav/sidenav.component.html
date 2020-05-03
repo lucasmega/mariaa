@@ -1,12 +1,10 @@
 <div id="mySidenav" class="sidenav">
 
     <div class="row" (click)="onProfile()">
-        <div class="col-4">
-            <span id="user">
-          <img src="../../assets/icon/user.svg">
-        </span>
+        <div class="col-3">
+            <span><img src="../../assets/icon/user.svg"></span>
         </div>
-        <div class="col-8">
+        <div class="col-9">
             <label id="name">Maria da Silva</label>
             <div class="block-score">
                 <label id="score">4.78</label>
@@ -15,13 +13,17 @@
         </div>
     </div>
 
+    <mat-divider></mat-divider>
+
     <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
 
     <mat-list *ngFor="let item of items">
-        <mat-list-item (click)="openPage(item)">
-            <span id="items">Home</span>
-        </mat-list-item>
-        <mat-divider></mat-divider>
+        <div class="mat-list-item">
+            <mat-list-item (click)="openPage(item)">
+                <span><img src="../../assets/icon/{{item.icon}}.svg"> {{ item.item }} </span>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+        </div>
     </mat-list>
 
 </div>

@@ -29,11 +29,18 @@ export class SidenavComponent implements OnInit {
     this.items = this.sidenavService.getItems();
   }
 
-  public openPage(item: SideNavModel) { }
+  public openPage(item: SideNavModel) {
+    item.page ? this.navigateByUrl(item.menu) : null;
+   }
 
   public onProfile() {
     this.router.navigateByUrl('/profile');
     this.closeNav();
+  }
+
+  public navigateByUrl(url: string) {
+    this.closeNav();
+    this.router.navigateByUrl(`/${url}`);
   }
 
 }
