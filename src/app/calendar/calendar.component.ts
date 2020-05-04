@@ -1,6 +1,9 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+
 import { MatDialog } from '@angular/material/dialog';
 import { IgxCalendarComponent } from 'igniteui-angular';
+
+import { UtilService } from '../service/export';
 
 import { DetailsWorkComponent } from '../details-work/details-work.component';
 
@@ -13,9 +16,11 @@ export class CalendarComponent implements OnInit {
 
   @ViewChild('calendar', { static: true }) public calendar: IgxCalendarComponent;
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog, private utilService: UtilService) { }
 
-  public ngOnInit() { }
+  public ngOnInit() { 
+    this.utilService.sidenav(true);
+  }
 
   public onDaySelected(date: Date) {
     this.openDialog(this.getDay(date['date']));

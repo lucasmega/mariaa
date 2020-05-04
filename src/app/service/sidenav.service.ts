@@ -8,8 +8,9 @@ import { SideNavModel } from '../model/export';
 export class SidenavService {
 
     private items: SideNavModel[] = [
-        { item: 'Calendário', icon: 'date', menu: 'category', page: true },
-        { item: 'Carteira', icon: 'wallet', menu: 'wallet', page: true}
+        { item: 'Calendário', icon: 'date', menu: 'calendar', page: true },
+        { item: 'Carteira', icon: 'wallet', menu: 'wallet', page: true},
+        { item: 'Sair', icon: 'logout', menu: 'login', page: true}
       ];
 
   constructor() { }

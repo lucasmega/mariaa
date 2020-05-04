@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <label id="title" [innerHTML]="'Login'"></label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label id="subtitle" [innerHTML]="'Novo por aqui?'"></label>
+            <label id="link" [innerHTML]="'Registre-se'"></label>
+        </div>
+    </div>
+
+    <form>
+        <mat-form-field class="full-width">
+            <mat-label>E-mail</mat-label>
+            <input type="email" matInput>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Senha</mat-label>
+            <input type="password" matInput>
+        </mat-form-field>
+        <label>Esqueceu sua senha?</label>
+
+
+        <div class="btn-submit">
+            <button id="submit" (click)="onCalendar()">Login</button>
+        </div>
+    </form>
+</div>

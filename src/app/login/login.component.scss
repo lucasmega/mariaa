@@ -1,0 +1,46 @@
+.container {
+    margin-top: 50px;
+    .row {
+        .col {
+            text-align: center;
+            label {
+                margin: 5px;
+            }
+            label#title {
+                font-size: 30px;
+                font-family: 'comfortaa';
+            }
+            label#subtitle {
+                font-size: 20px;
+            }
+            label#link {
+                font-size: 20px;
+                color: #0645ad;
+            }
+        }
+    }
+    form {
+        text-align: end;
+        margin-top: 80px;
+        label {
+            top: -20px;
+            color: #0645ad;
+            position: relative;
+        }
+        .full-width {
+            width: 100%;
+        }
+        .btn-submit {
+            margin-top: 10px;
+            button {
+                width: 100%;
+                outline: none;
+                color: #fff;
+                min-height: 45px;
+                font-family: 'comfortaa';
+                text-transform: uppercase;
+                background-color: #ee6e73;
+            }
+        }
+    }
+}

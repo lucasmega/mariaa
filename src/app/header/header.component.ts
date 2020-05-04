@@ -12,7 +12,9 @@ export class HeaderComponent implements OnInit {
 
   public isSidenav: boolean;
 
-  constructor(private utilService: UtilService, private router: Router) { }
+  constructor(private utilService: UtilService, private router: Router) { 
+    this.utilService.emitSidenav.subscribe(sidenav => this.isSidenav = sidenav);
+  }
 
   ngOnInit() {}
 

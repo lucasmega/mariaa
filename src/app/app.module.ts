@@ -23,6 +23,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { JobComponent } from './job/job.component';
+import { LoginComponent  } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -33,6 +34,7 @@ import { DetailsWorkComponent } from './details-work/details-work.component';
 	declarations: [
 		JobComponent,
 		AppComponent,
+		LoginComponent,
 		HeaderComponent,
 		FooterComponent,
 		SidenavComponent,
