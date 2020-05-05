@@ -27,8 +27,10 @@ import { LoginComponent  } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { RegisterComponent } from './register/register.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { DetailsWorkComponent } from './details-work/details-work.component';
+import { RegistrationConfirmationComponent } from './registration-confirmation/registration-confirmation.component';
 
 @NgModule({
 	declarations: [
@@ -38,8 +40,10 @@ import { DetailsWorkComponent } from './details-work/details-work.component';
 		HeaderComponent,
 		FooterComponent,
 		SidenavComponent,
+		RegisterComponent,
 		CalendarComponent,
-		DetailsWorkComponent
+		DetailsWorkComponent,
+		RegistrationConfirmationComponent
 	],
 	entryComponents: [
 		DetailsWorkComponent

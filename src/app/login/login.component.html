@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col">
             <label id="subtitle" [innerHTML]="'Novo por aqui?'"></label>
-            <label id="link" [innerHTML]="'Registre-se'"></label>
+            <label id="link" (click)="onRegister()" [innerHTML]="'Registre-se'"></label>
         </div>
     </div>
 

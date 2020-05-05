@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <label id="title" [innerHTML]="'Registre-se'"></label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label id="subtitle" [innerHTML]="'Já tem uma conta?'"></label>
+            <label id="link" (click)="onLogin()" [innerHTML]="'Login'"></label>
+        </div>
+    </div>
+
+    <form [formGroup]="form">
+
+        <mat-form-field class="full-width">
+            <mat-label>Confirme seu e-mail</mat-label>
+            <input type="email" formControlName="retypeEmail" matInput>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Confirme sua senha</mat-label>
+            <input type="password" formControlName="retypePassword" matInput>
+        </mat-form-field>
+
+        <div class="btn-submit">
+            <button id="submit" (click)="onCalendar(form)">Registre-se</button>
+        </div>
+    </form>
+</div>

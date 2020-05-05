@@ -10,6 +10,7 @@ export class SidenavService {
     private items: SideNavModel[] = [
         { item: 'Calendário', icon: 'date', menu: 'calendar', page: true },
         { item: 'Carteira', icon: 'wallet', menu: 'wallet', page: true},
+        {item: 'Configuração', icon: 'configuration', menu: '**', page: true},
         { item: 'Sair', icon: 'logout', menu: 'login', page: true}
       ];
 

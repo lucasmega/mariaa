@@ -16,6 +16,10 @@ export class LoginComponent implements OnInit {
     this.utilService.sidenav(false);
   }
 
+  public onRegister() {
+    this.router.navigateByUrl('register');
+  }
+
   public onCalendar() {
     this.router.navigateByUrl('/calendar');
   }
